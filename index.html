@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Game</title>
+    <script defer src="game-setup.js"></script>
+    <script defer src="game-flow.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+</head>
+<body>
+
+<div class="game-start-modal-wrap">
+    <div class="game-start-modal-content">
+        <div class="available-suit suit_black" id="suit-spades">&#9824;</div>
+        <div class="available-suit suit_red" id="suit-hearts">&#9829;</div>
+        <div class="available-suit suit_black" id="suit-clubs">&#9827;</div>
+        <div class="available-suit suit_red" id="suit-diamonds">&#9830;</div>
+
+        <div class="game-start-spinning-circle">
+            <div class="spinning-circle-arrow"></div>
+        </div>
+
+        <div class="game-start-message">Click the circle to determine the trump suit</div>
+    </div>
+</div>
+
+<div class="game-area">
+    <div class="game-score">
+        <span id="first-player-score">0</span> : <span id="second-player-score">0</span>
+    </div>
+    <button type="button" class="hoverable" id="next-move-button">Next Move</button>
+
+    <div class="player-name-section" id="first-player-name">Piotr</div>
+    <div class="player-name-section" id="second-player-name">Vasily</div>
+
+    <div class="player-suit-indicator" id="first-player-suit-indicator"></div>
+    <div class="player-suit-indicator" id="second-player-suit-indicator"></div>
+
+    <div class="draw-message first-message draw-message_hidden">It's a draw</div>
+    <div class="draw-message second-message draw-message_hidden">It's a draw</div>
+    <div class="winner-message winner-message_hidden">Winner!</div>
+
+    <div class="player-hand-section" id="first-player-hand"></div>
+    <div class="player-hand-section" id="second-player-hand"></div>
+</div>
+
+</body>
+</html>
