@@ -168,7 +168,6 @@ function endGame() {
         winnerMessage.classList.add('winner-second-player');
         setInterval(() => winnerMessage.classList.toggle('winner-message_hidden'), 500);
     } else {
-        console.log('draw');
         [firstPlayerSuitIndicator, secondPlayerSuitIndicator].forEach(indicator => indicator.classList.add('leading-indicator'));
         drawMessages.forEach(msg => msg.classList.remove('draw-message_hidden'));
     }
